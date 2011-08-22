@@ -6,3 +6,5 @@ Debug
 *.ncb
 *.pdb
 *.bwl
+*.obj
+*.exe

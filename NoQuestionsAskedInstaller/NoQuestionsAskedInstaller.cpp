@@ -203,7 +203,38 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     patchIcons(starcraft.buffer, starcraft.bufferSize);
     patchMultipleInstances(starcraft.buffer);
 
-    starcraft.saveToFile("F:\\prog\\BWDI_Starcraft.exe");
+    // Get the User's home folder from Environment variables and save there
+    int buffsize = 128;
+    int buffIndex = 0;
+    LPSTR buff = (LPSTR)malloc(buffsize * sizeof(char));
+
+    int envSize;
+
+    if (buffsize < (envSize = GetEnvironmentVariable("HOMEDRIVE", buff, 128))) {
+        realloc(buff, envSize * sizeof(char));
+        buffsize = envSize;
+    }
+    
+    buffIndex += envSize;
+
+    if (buffsize - buffIndex < (envSize = GetEnvironmentVariable("HOMEPATH", buff+buffIndex, 128))) {
+        realloc(buff, envSize*sizeof(char) + buffIndex);
+        envSize = GetEnvironmentVariable("HOMEPATH", buff+buffIndex, 128);
+    }
+
+    if (0 == envSize) {
+        MessageBox(NULL, "Could not find your Home directory. Cannot install BWDI", title, MB_ICONERROR|MB_OK);
+        exit(1);
+    }
+
+    buffIndex += envSize;
+
+    buffIndex += _snprintf_s(buff+buffIndex, buffsize-buffIndex, buffsize-buffIndex-1, "\\BWDI_StarCraft.exe");
+
+    MessageBox(NULL, buff, title, MB_ICONERROR|MB_OK);
+    starcraft.saveToFile(buff);
+
+    free(buff);
   }
   catch(std::exception &e)
   {
