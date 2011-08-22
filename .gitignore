@@ -1,0 +1,8 @@
+*.sdf
+Release
+Debug
+*.dll
+*.lib
+*.ncb
+*.pdb
+*.bwl

@@ -1,0 +1,15 @@
+LIBRARY                 BWDI
+EXPORTS
+  BWDIGetVersion        @1
+  BWDICreate            @2
+  BWDIDestroy           @3
+  BWDIWaitForNextEvent  @4
+  BWDIPollForNextEvent  @5
+  BWDIGetStaticGameData @6
+  BWDIMessage           @10
+;  BWDIIssueCommand     @11
+  BWDIDrawText          @20
+  BWDIDrawLine          @21
+  BWDIDrawRectangle     @22
+  BWDIDrawCircle        @23
+  BetaRelease

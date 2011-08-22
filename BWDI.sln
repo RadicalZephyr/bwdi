@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BWDIDriver", "BWDIDriver\BWDIDriver.vcproj", "{87C475D0-57B8-4F99-8F6F-0A274DAAFB56}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BWDI_ChaosLauncherInjector", "BWDI_ChaosLauncherInjector\BWDI_ChaosLauncherInjector.vcproj", "{CC44A701-6FD4-43B3-946E-8FD3949760E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BWDIClient", "BWDIClient\BWDIClient.vcproj", "{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NoQuestionsAskedInstaller", "NoQuestionsAskedInstaller\NoQuestionsAskedInstaller.vcproj", "{E6683F51-E989-4C3A-8F6C-574BDEC6D330}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tracer", "Tracer\Tracer.vcproj", "{78ED1D9F-F830-42BF-9ECA-83ECC467F241}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00} = {A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SNP_DirectIP", "SNP_DirectIP\SNP_DirectIP.vcproj", "{452BDDC2-D77B-45C3-991E-7D93DE3638B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87C475D0-57B8-4F99-8F6F-0A274DAAFB56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87C475D0-57B8-4F99-8F6F-0A274DAAFB56}.Debug|Win32.Build.0 = Debug|Win32
+		{87C475D0-57B8-4F99-8F6F-0A274DAAFB56}.Release|Win32.ActiveCfg = Release|Win32
+		{87C475D0-57B8-4F99-8F6F-0A274DAAFB56}.Release|Win32.Build.0 = Release|Win32
+		{CC44A701-6FD4-43B3-946E-8FD3949760E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC44A701-6FD4-43B3-946E-8FD3949760E9}.Debug|Win32.Build.0 = Debug|Win32
+		{CC44A701-6FD4-43B3-946E-8FD3949760E9}.Release|Win32.ActiveCfg = Release|Win32
+		{CC44A701-6FD4-43B3-946E-8FD3949760E9}.Release|Win32.Build.0 = Release|Win32
+		{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}.Debug|Win32.Build.0 = Debug|Win32
+		{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}.Release|Win32.ActiveCfg = Release|Win32
+		{A2B3C6BE-AAB0-43C8-9A85-5BCEBC2D2E00}.Release|Win32.Build.0 = Release|Win32
+		{E6683F51-E989-4C3A-8F6C-574BDEC6D330}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6683F51-E989-4C3A-8F6C-574BDEC6D330}.Debug|Win32.Build.0 = Debug|Win32
+		{E6683F51-E989-4C3A-8F6C-574BDEC6D330}.Release|Win32.ActiveCfg = Release|Win32
+		{E6683F51-E989-4C3A-8F6C-574BDEC6D330}.Release|Win32.Build.0 = Release|Win32
+		{78ED1D9F-F830-42BF-9ECA-83ECC467F241}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78ED1D9F-F830-42BF-9ECA-83ECC467F241}.Debug|Win32.Build.0 = Debug|Win32
+		{78ED1D9F-F830-42BF-9ECA-83ECC467F241}.Release|Win32.ActiveCfg = Release|Win32
+		{78ED1D9F-F830-42BF-9ECA-83ECC467F241}.Release|Win32.Build.0 = Release|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Debug|Win32.Build.0 = Debug|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Release|Win32.ActiveCfg = Release|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

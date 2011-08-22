@@ -1,0 +1,228 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TRACER              ICON                    "Tracer.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_TRACER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_TRACER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 100, 100, 220, 503
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tracer Example Module"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "isBuildable",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,145,49,10
+    LTEXT           "Map",IDC_STATIC,120,127,14,8
+    CONTROL         "isWalkable",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,155,49,10
+    CONTROL         "only selected units",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,75,10
+    LTEXT           "Units",IDC_STATIC,9,6,17,8
+    LTEXT           "Bullets",IDC_STATIC,122,15,22,8
+    CONTROL         "bullets info",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,25,51,10
+    CONTROL         "player",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,127,36,10
+    CONTROL         "position",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,52,41,10
+    CONTROL         "hitPoints",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,138,43,10
+    CONTROL         "shield",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,147,34,10
+    CONTROL         "energy",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,156,39,10
+    CONTROL         "resources",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,165,47,10
+    CONTROL         "killCount",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,174,43,10
+    CONTROL         "isBeingConstructed",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,183,77,10
+    CONTROL         "isBeingGathered",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,192,68,10
+    CONTROL         "isBeingHealed",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,201,60,10
+    CONTROL         "isBlind",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,210,35,10
+    CONTROL         "isBraking",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,219,44,10
+    CONTROL         "isBurrowed",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,228,51,10
+    CONTROL         "isCarryingGas",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,237,60,10
+    CONTROL         "isCarryingMinerals",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,246,74,10
+    CONTROL         "isCloaked",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,255,46,10
+    CONTROL         "isCompleted",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,264,55,10
+    CONTROL         "isConstructing",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,273,61,10
+    CONTROL         "isDefenseMatrixed",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,282,75,10
+    CONTROL         "isEnsnared",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,291,51,10
+    CONTROL         "isFollowing",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,300,50,10
+    CONTROL         "isGatheringGas",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,309,64,10
+    CONTROL         "isGatheringMinerals",IDC_CHECK27,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,318,78,10
+    CONTROL         "isIrradiated",IDC_CHECK28,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,327,53,10
+    CONTROL         "isLifted",IDC_CHECK29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,336,39,10
+    CONTROL         "isLockedDown",IDC_CHECK30,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,345,61,10
+    CONTROL         "isMaelstrommed",IDC_CHECK31,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,354,67,10
+    CONTROL         "isMorphing",IDC_CHECK32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,363,50,10
+    CONTROL         "isParasited",IDC_CHECK33,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,372,51,10
+    CONTROL         "isPatrolling",IDC_CHECK34,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,381,50,10
+    CONTROL         "isPlagued",IDC_CHECK35,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,390,46,10
+    CONTROL         "isRepairing",IDC_CHECK36,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,399,51,10
+    CONTROL         "isResearching",IDC_CHECK37,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,408,60,10
+    CONTROL         "isSelected",IDC_CHECK38,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,417,48,10
+    CONTROL         "isStasised",IDC_CHECK39,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,426,47,10
+    CONTROL         "isStimmed",IDC_CHECK40,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,435,47,10
+    CONTROL         "isTraining",IDC_CHECK41,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,444,46,10
+    CONTROL         "isUnpowered",IDC_CHECK42,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,453,57,10
+    CONTROL         "isUpgrading",IDC_CHECK43,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,463,53,10
+    CONTROL         "isVisible",IDC_CHECK44,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,165,40,10
+    CONTROL         "isExplored",IDC_CHECK45,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,175,49,10
+    CONTROL         "hasCreep",IDC_CHECK46,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,185,47,10
+    CONTROL         "groundHeight",IDC_CHECK47,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,195,59,10
+    CONTROL         "map info",IDC_CHECK48,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,135,43,10
+    CONTROL         "units info",IDC_CHECK49,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,16,45,10
+    CONTROL         "position",IDC_CHECK50,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,34,41,10
+    CONTROL         "clearanceLevel",IDC_CHECK51,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,34,63,10
+    CONTROL         "sightingID",IDC_CHECK52,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,43,48,10
+    CONTROL         "isAccelerating",IDC_CHECK53,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,62,60,10
+    CONTROL         "isMoving",IDC_CHECK54,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,72,43,10
+    CONTROL         "isIdle",IDC_CHECK55,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,81,33,10
+    CONTROL         "angle",IDC_CHECK56,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,90,33,10
+    CONTROL         "velocity",IDC_CHECK57,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,99,41,10
+    CONTROL         "isUnderStorm",IDC_CHECK58,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,108,59,10
+    CONTROL         "type",IDC_CHECK59,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,117,31,10
+    CONTROL         "_debug",IDC_CHECK60,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,473,40,10
+    CONTROL         "regions",IDC_CHECK61,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,215,39,10
+    CONTROL         "regionID",IDC_CHECK62,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,225,43,10
+    CONTROL         "type",IDC_CHECK63,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,44,31,10
+    CONTROL         "source",IDC_CHECK64,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,54,37,10
+    CONTROL         "target",IDC_CHECK65,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,63,36,10
+    LTEXT           "Units' Type",IDC_STATIC,121,249,36,8
+    CONTROL         "maxHitPoints",IDC_CHECK66,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,259,57,10
+    CONTROL         "grid",IDC_CHECK67,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,205,28,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 497
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Tracer"
+    IDC_TRACER              "TRACER"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

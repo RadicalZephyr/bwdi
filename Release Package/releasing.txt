@@ -1,0 +1,5 @@
+When creating an official release, folowing steps must be followed:
+
+- run \revisionUpdate.bat
+- rebuild the project as "Release"
+- run \Release Package\assemble.cmd
